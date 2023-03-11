@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 50px;
+}
+
+img{
+    margin: 20px;
+    width: 100px;
+}
+
+.enlaces a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.enlaces a:hover{
+    cursor: pointer;
+    color: #838383;
+}
+
+.inicio{
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/*SECCION 2 -----------------------------------------*/
+
+.sec2{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.contenido{
+    background-color: aqua;
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+    text-align: center;
+}
+
+h3{
+    margin: 0;
+    padding: 50px;
+    background-color: blueviolet;
+}
+
+.calculo{
+    display: flex;
+    justify-content: center;
+}

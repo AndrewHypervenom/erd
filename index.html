@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bienvenido</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/style_principal.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src='main.js'></script>
+</head>
+<body>
+    <section class="sec1">
+        <nav>
+            <img src="../img/logonormal.png" alt="Logo Enel">
+            <div class="enlaces">
+                <a href="#ap">Aprendizaje Basico</a>
+                <a href="#ap">Perfiles</a>
+                <a href="#ap">Evaluación</a>
+                <a href="#ap">Resultados</a>
+            </div>
+        </nav>
+        
+        <div class="presentacion">
+                <h1>Hola, Andrew!</h1>
+        
+                <h2>¿Qué quieres hacer el día de hoy?</h2>
+        </div>
+    </section>
+    
+    <section class="sec2">
+        <div class="panel">
+            <div class="circulo">
+                <div class="icono">
+                    <img src="../img/icono.png" alt="">
+                </div>
+                <p>Concurso Junior</p>
+            </div>
+            
+            <div class="opcion">
+                <a href="evaluacion.html">Evaluación</a>
+                <a href="">Estadisticas</a>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="circulo">
+                <div class="icono">
+                    <img src="../img/icono.png" alt="">
+                </div>
+                <p>Concurso Especializado</p>
+            </div>
+            
+            <div class="opcion">
+                <a href="evaluacion.html">Evaluación</a>
+                <a href="">Estadisticas</a>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="circulo">
+                <div class="icono">
+                    <img src="../img/icono.png" alt="">
+                </div>
+                <p>Concurso Jovenes Talento</p>
+            </div>
+            
+            <div class="opcion">
+                <a href="evaluacion.html">Evaluación</a>
+                <a href="">Estadisticas</a>
+            </div>
+        </div>
+        
+        <div class="panel">
+            <div class="circulo">
+                <div class="icono">
+                    <img src="../img/icono.png" alt="">
+                </div>
+                <p>Concurso Practicantes</p>
+            </div>
+            
+            <div class="opcion">
+                <a href="evaluacion.html">Evaluación</a>
+                <a href="">Estadisticas</a>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section class="sec3" id="ap">
+        <h3>Aprendizaje Basico</h3>
+        
+        <div class="videoscontent">
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G7KNmW9a75Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <h4>Introduccion aplicación</h4>
+                <p>Aquí obtendras los conocimientos necesarios para poder utilizar esta pagina web.</p>
+            </div>
+
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G7KNmW9a75Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <h4>Introduccion estadisticas</h4>
+                <p>Aquí obtendras los conocimientos necesarios para poder utilizar esta pagina web.</p>
+            </div>
+            
+            <div class="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/G7KNmW9a75Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <h4>Introduccion evaluación</h4>
+                <p>Aquí obtendras los conocimientos necesarios para poder utilizar esta pagina web.</p>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        let botones = document.getElementsByClassName("circulo");
+        
+        for (let i = 0; i<botones.length; i++){
+            botones[i].addEventListener("click",function(){
+                this.classList.toggle("active");
+                let opcion = this.nextElementSibling;
+                if (opcion.style.display == "block"){
+                    opcion.style.display = "none";
+                } else {
+                    opcion.style.display = "block";
+                }
+            })
+        }
+    </script>
+</body>
+</html>

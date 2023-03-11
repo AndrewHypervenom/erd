@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 50px;
+}
+
+img{
+    margin: 20px;
+    width: 100px;
+}
+
+.enlaces a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: #000;
+}
+
+.enlaces a:hover{
+    cursor: pointer;
+    color: #838383;
+}
+
+.presentacion{
+    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 200px;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    /*position: absolute; ABSOLUTE ARRIBA Z2 - RELATIVE DEBAJO Z1
+    z-index: 2; UN ELEMENTO SOBRE EL OTRO*/
+}
+
+h1{
+    margin: 45px 0 0 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0 0 0;
+}
+
+/*SECCION 2 ------------------------------------------------*/
+
+.sec2{
+    display: flex;
+    justify-content: center;
+}
+
+.panel{
+    margin: 50px 20px 0 20px;
+    width: 250px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.active, .circulo:hover{
+    background-color: #d1d1d1;
+}
+
+.circulo{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #000;
+    margin: 40px 0 0 0;
+    border-radius: 50%;
+}
+
+.icono img{
+    text-align: center;
+    width: 60px;
+    margin: 40px 0 0 0;
+}
+
+.circulo p{
+    margin-top: 70px;
+}
+
+.opcion{
+    display: none;
+    width: 250px;
+    margin: 60px 0 20px 0;
+}
+
+.opcion a{
+    border: 1px solid #000;
+    padding: 7px 10px;
+    margin: 0 10px;
+    color: #000;
+}
+
+.opcion a:hover{
+    cursor: pointer;
+}
+
+/*SECCION 3 --------------------------------------------*/
+
+.sec3{
+    margin: 80px 0 100px 0;
+    background-color: #dcfff3;
+    width: 90%;
+    border-radius: 0 200px 200px 0;
+}
+
+h3{
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+iframe{
+    height: 200px;
+    width: 310px;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+.videoscontent{
+    display: flex;
+    margin-left: 50px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.videos p{
+    width: 280px;
+    margin: -10PX 0 20PX 0;
+}
+
